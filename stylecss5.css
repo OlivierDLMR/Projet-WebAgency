@@ -1,0 +1,249 @@
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    z-index: 100;  
+}
+
+section
+{
+    width: 100%;
+    height: 800px;
+}
+
+/* MENU LOGO NAVIGATION*/
+
+
+
+.menu-logo img
+{
+    width: auto;
+    margin-top: 1rem;
+}
+
+.menu-logo
+{
+    display: inline-block;
+    position: fixed;
+    width: 55%;
+    height: 6rem;
+    
+    z-index: 21;
+    
+    padding-left: 10%;
+    
+}
+
+.menu-accueil     /* <nav>*/   
+{
+    display: inline-block;
+    position: fixed;
+    width: 45%;
+    height: 6rem;
+    z-index: 22;
+    
+    right: 0%;
+    top: 0%;
+}
+
+.menu-accueil-list       /*  <ul> */
+{
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    height: auto;
+    margin-top: 0%;
+    color: black;
+    margin-left: 8rem;
+    
+}
+
+.menu-accueil-item       /* <li> */
+{
+    display: inline-block;
+    width: 100px;
+    padding: 10% 0 10% 0;
+    
+}
+
+
+.menu-accueil-item a     /*  <li> + <a/>  */
+{
+    text-decoration: none;
+    font-family: 'robotoregular', Arial, serif;
+    color: black;
+}
+
+.active           /*   "active" pour laisser le liseret bleu visible */
+{
+    
+    border-top: 3px solid #4eb1d5;
+    font-family: 'robotomedium', Arial, serif;
+    padding-top: 10%;
+    width: 100px;
+}
+
+
+.menu-accueil-item:hover   /*  survol sur le menu  */
+{
+    border-top: 3px solid #4eb1d5;
+    font-family: 'robotomedium', Arial, serif;
+    padding-top: 10%;
+    width: 100px;   
+}
+
+
+/*  SLIDER TEXTE PRESENTATION  */
+
+.slider-container
+{
+    position: relative;
+    width: 100%;
+}
+
+.slider-image
+{
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+    z-index: 10; /* rapport au demi cercle et fleches*/
+}
+
+.slider-text
+{
+    display: inline-block;
+    position: absolute;
+    width: 35%;
+    
+    top: 25%;
+    left: 10%;
+}
+
+.slider-titre
+{
+    display: inline-block;
+    color: #5da2ce;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.slider-titre-description
+{
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+    line-height: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.slider-subtitle
+{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.bouton_bleu
+{
+    background-color: #5da2ce;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid #438aa6;
+    font-weight: bold;
+    position: absolute;
+    
+    margin-top: 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+/*DEMI CERCLE + FLECHES*/
+.slider-commande-left
+{
+    top: 250px;
+    display: inline-block;
+    position: absolute;
+    float: left;
+    width: 50%;
+}
+
+.demi-cercle-left
+{
+    width: 30px;
+    height: 60px;
+    background-color: grey;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute; 
+}
+
+.fa-chevron-left
+{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.slider-commande-right
+{
+    bottom: 250px;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    float: right;
+}
+
+.demi-cercle-right
+{
+    width: 30px;
+    height: 60px;
+    background-color: grey;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.fa-chevron-right
+{
+    color: white;
+    font-size: 1.5em;
+}
+
+/*  BARRE DEFILEMENT FICTIVE */
+.trait-defilement
+{
+    display: block;
+    position: relative;
+}
+
+.trait-blue
+{
+	width: 10%;
+    height: 4px;
+    position: absolute;
+	background-color:  #3491b2;
+}
+.trait-grey
+{
+	width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: grey;
+    opacity: 0.5;
+}
+
+
